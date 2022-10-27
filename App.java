@@ -64,17 +64,27 @@ public class App {
 		contador++;
 	}
 	public static void listarItems() {
-		for (int i = 0; i < contador; i++) {
-			System.out.println(items[i].getNombre()+ " precio: " + items[i].getPrecio() + ".");
+	//validar que si hayan elementos que mostrar.
+		if(contador == 0) {
+			System.out.println("No hay elementos que mostrar.");
+		}else{
+			for (int i = 0; i < contador; i++) {
+				System.out.println(items[i].getNombre()+ " precio: " + items[i].getPrecio() + ".");
+			}
 		}
 	}
 	
 	//método para borrar item.
 	public static void borrarItem(int id) {
-		for (int i = 0; i < contador; i++) {
-			if (items[i].getId() == id) {
-				items[i] = null;
-				contador--;
+		//validar qeu haya elementos.
+		if(contador == 0) {
+			System.out.println("No hay elementos que borrar.");
+		}else{
+			for (int i = 0; i < contador; i++) {
+				if (items[i].getId() == id) {
+					items[i] = null;
+					contador--;
+				}
 			}
 		}
 	}
