@@ -21,10 +21,7 @@ public class App {
 			System.out.println("1. Agregar item.");
 			System.out.println("2. Listar items.");
 			System.out.println("3. borrar item.");
-			System.out.println("4. Dar de alta un cliente.");
-			System.out.println("5. Añaadir item al carrito.");
-			System.out.println("6. Eliminar item del carrito.");
-			System.out.println("7. Salir.");
+			System.out.println("4. salir");
 			System.out.println("Ingrese opción: ");
 			opcion = teclado.nextInt();
 			//hacer switch para opciones.
